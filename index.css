@@ -1,0 +1,47 @@
+h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  line-height: 10px;
+  color: blue;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  
+}
+div {
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid crimson;
+}
+
+strong {
+  color: red;
+  font-style: italic;
+}
+
+img {
+  border: 5px solid red;
+  
+
+}
+
+
+dl {
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: underline;
+}
+  
