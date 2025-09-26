@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің портфолиом</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="logo">Edok</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Басты бет</a></li>
+        <li><a href="about.html">Мен туралы</a></li>
+        <li><a href="#skills">Дағдылар</a></li>
+        <li><a href="#contact">Байланыс</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Мен - Елдос</h1>
+      <p>Мен html css js арқылы шағын жобалар жасаймын.</p>
+      <a href="#contact" class="btn">Хабарласу</a>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Менің дағдыларым</h2>
+        <div class="skills-cards">
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Семантикалық HTML жазу, заманауи CSS қолдану, адаптивті дизайн жасау.</p>
+                </div>
+                <div class="card">
+                <h3>JavaScript</h3>
+                <p>DOM манипуляция, оқиғалармен жұмыс, интерактивті UI жасау.</p>
+                </div>
+                <div class="card">
+                <h3>React</h3>
+                <p>Компоненттік архитектура, props & state, React Hooks қолдану.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Байланыс</h2>
+      <form>
+        <label for="name">Атыңыз:</label>
+        <input type="text" maxlength="100" id="name" name="name" required placeholder="Атыңызды жазыңыз">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="NNN@gmail.com">
+
+        <label for="message">Хабарлама:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Жіберу</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Барлық құқықтар қорғалған</p>
+  </footer>
+</body>
+</html>
