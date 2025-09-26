@@ -68,14 +68,14 @@ header {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
-  background: red;
+  background: pink;
   color: whitesmoke;
   border-radius: 6px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: red;
+  background: rgb(6, 241, 131);
 }
 
 .skills {
