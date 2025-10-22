@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: orange;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: rgb(255, 166, 0);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: 1px solid orange;
+  border-radius: 8px;
+  min-width: 180px;
+  top: 30px;
+  left: 0;
+  box-shadow: 0 0 10px rgba(125, 60, 225, 03);
+  z-index: 20;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+  color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.banner {
+  text-align: center;
+  background: linear-gradient(135deg, orange, rgb(218, 59, 10));
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: white;
+}
+
+.games {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.games h2 {
+  color: orange;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-card {
+  background: black;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(245, 140, 2);
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(255, 123, 0);
+}
+
+.game-card img {
+  width: 100%;
+  display: block;
+}
+
+.game-card h3 {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.game-card a {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background: orange;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.game-card a:hover {
+  background: rgb(255, 166, 0);
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0, 30px;
+  text-align: left;
+}
+
+.section {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.section h3{
+  color: orange;
+}
+
+.footer-section h3 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.bottom {
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 0.85em;
+}
+
+.bottom a {
+  color: orange;
+  text-decoration: none;
+  transition: 0.3s;
+
+}
+
+.bottom a:hover {
+  color: white;
+}

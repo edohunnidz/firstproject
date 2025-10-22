@@ -1,0 +1,40 @@
+body {
+  /* background-image: url(./images/8324.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; */
+  font-family: sans-serif;
+  background: white;
+  padding: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.4s ease, 0.4s ease;
+  transform-origin: center;
+}
+
+.card:hover {
+  transform: 
+    scale(1.2)                   
+    translate(10px, 10px)           
+    rotate(2deg)                    
+    skew(-2deg, 1deg);              
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+

@@ -1,0 +1,37 @@
+.white {
+    color: white;
+}
+
+.product_card {
+    background: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product_card img {
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product_card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.product_card p {
+    margin-bottom: 20px;
+}
+
+.product_card:hover {
+  transform: 
+    scale(1.2)                   
+    translate(10px, 10px)           
+    rotate(2deg)                    
+    skew(-2deg, 1deg);              
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}

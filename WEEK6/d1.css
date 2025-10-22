@@ -1,0 +1,60 @@
+.btn {
+    padding: 7px 14px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 50px;
+    transition:all .2s linear;
+   
+}
+
+.btn:hover {
+    background-color: rgb(242, 4, 4);
+    color: black;
+    transform: scale(1.1);
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(237, 9, 9);
+    }
+    50%{
+        transform: rotate(180deg);
+        background-color: rgb(170, 247, 36);
+    }
+    to {
+        transform: rotate(360deg);
+        background-color: rgb(45, 3, 88);
+    }
+}
+
+.anime {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+
+    animation-duration: 2s;
+    animation-name: circle;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.transform {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(50px, 50px);
+    transform: scale(1);
+    transform: skew(20deg, 30deg);
+}

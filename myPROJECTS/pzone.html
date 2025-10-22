@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLayZone</title>
+  <link rel="stylesheet" href="./style/pzone.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">PlayZone 🎮</div>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">Популярные игры</a>
+      <a href="#">Список игр</a> 
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Категории ▼</a>
+          <div class="dropdown-content">
+            <a href="#">⚔️ Экшен</a>
+            <a href="#">🚗 Гонки</a>
+            <a href="#">🧩 Головоломки</a>
+            <a href="#">🏰 Приключения</a>
+            <a href="#">🕹️ Аркады</a>
+            <a href="#">💀 Хоррор</a>
+            <a href="#">👑 RPG</a>
+            <a href="#">🔫 Шутеры</a>
+            <a href="#">⚽️ Спорт</a>
+          </div>
+        </div>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Скачивай любые игры без затрат!</h1>
+    <p>Открой мир игр прямо здесь 🎯</p>
+  </section>
+
+  <main class="games">
+    <h2>Популярные игры</h2>
+    <div class="game-grid">
+      <div class="game-card">
+        <img src="data:image/jpeg;base64,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" alt="тут ойн">
+        <h3>Madnes Combat</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202309/1318/31633b753add90ce0d9c17ba4ebad3969104e44e83e303d6.png?w=440" alt="Тут ойн">
+        <h3>Hotline Miami</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/items/424840/ba87af54ef0e5694a98d640c57e7f80370b0b88f.jpg" alt="Тут ойн">
+        <h3>Little Nightmares</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://sm.ign.com/ign_pt/cover/s/spongebob-/spongebob-squarepants-the-cosmic-shake_9mgj.jpg" alt="тут ойн">
+        <h3>Sponge Bob: Cosmic Shake</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/f8/NieR_Automata_cover.jpg/330px-NieR_Automata_cover.jpg" alt="тут ойн">
+        <h3>Nier: Automata</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://image.api.playstation.com/cdn/EP0700/CUSA03365_00/OFMeAw2KhrdaEZAjW1f3tCIXbogkLpTC.png" alt="тут ойн">
+        <h3>Dark Souls III</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://assets.xboxservices.com/assets/7b/54/7b54f5e4-0857-4ce3-8a18-2b8c431e8a9e.jpg?n=Elden-Ring_GLP-Page-Hero-0_1083x1222_01.jpg" alt="тут ойн">
+        <h3>Elden Ring</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://www.keycense.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fkeycense.appspot.com%2Fo%2Fproducts%252F671a49bd1fdd089e08e50525_gallery_0.jpg%3Falt%3Dmedia%26token%3D29941720-5fd1-4a12-8693-fc2fe918aa2a&w=3840&q=60" alt="тут ойн">
+        <h3>God of War: Ragnarok</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2nAcLes1vXw89xUBEPMqT1/ed2078d0ec7092c8634994a5dcd68174/media3.jpg" alt="тут ойн">
+        <h3>FAR CRY 3</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzc4NDc2OWItMTJmNy00MWQxLWExMzktNGIwYjA3MGVlZTE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="тут ойн">
+        <h3>Call of Duty Modern Warfare 3</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+      <div class="game-card">
+        <img src="https://img.ggsel.ru/4106980/original/AUTOxAUTO/6272570_imgwebp.webp" alt="тут ойн">
+        <h3>Euro Truck Simulator 2</h3>
+        <a href="#">Скачать</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="section">
+        <h3>Наша цель:</h3>
+        <p>
+          Без сомнения, все любят бесплатные игры на любой платформе. 
+          PlayZone — это арена для бесплатных игр, позволяющая скачивать все ваши любимые игры совершенно бесплатно, без вирусов и без каких-либо проблем. 
+          Все игры предустановлены, то есть вам не нужно их устанавливать. Наши игры сжаты, и никакой контент не удалён, что уменьшает размер игры. 
+          Мы реорганизовали процесс загрузки и стремимся стать легальной платформой для бесплатных предустановленных игр без каких-либо затрат.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Официальный сайт:</h3>
+        <p>
+          Доверяйте только официальному сайту <strong>PlayZone</strong> и избегайте подделок. Всегда проверяйте URL-адрес.
+        </p>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>© Авторское право 2025 | Все права защищены</p>
+        <p>
+          <a href="#">О нас</a> |
+          <a href="#">Запросить игру</a> |
+          <a href="#">Политика</a> |
+          <a href="#">Условия использования</a> |
+          <a href="#">Связаться с нами</a> 
+        </p>
+    </div>
+  </footer>
+</body>
+</html>

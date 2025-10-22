@@ -1,0 +1,16 @@
+:root {
+  --primary-color: rgb(26, 62, 222);
+  --second-color: rgb(166, 239, 21);
+}
+
+.div1 {
+  color: var(--second-color);
+}
+
+.div2 {
+  color: var(--primary-color);
+}
+
+.div3 {
+  color: var(--primary-color);
+}

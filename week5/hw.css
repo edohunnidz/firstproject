@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #3498db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+  transition: all 2s linear;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.box {
+  background: #f1c40f;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+/* Смартфондар үшін */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    font-size: 1rem;
+  }
+}
+
+/* Планшет үшін */
+@media (min-width: 601px) and (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    font-size: 1.1rem;
+  }
+}
+
+/* Компьютер үшін */
+@media (min-width: 901px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
